@@ -8,11 +8,11 @@ The JSX returned should consist of:
     - a p element with className attribute of "subtitle" and the inner text of "my name is"
     - a h3 element with className attribute of "name" and the inner text of your name
 */
-const NameTag = () => (
+const NameTag = props => (
   <div className="name-tag">
     <h2 className="title">HELLO</h2>
     <p className="subtitle">my name is</p>
-    <h3 className="name">Naima</h3>
+    <h3 className="name">{props.name}</h3>
   </div>
 );
 /* export our functional component definition to be 
