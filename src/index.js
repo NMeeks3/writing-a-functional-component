@@ -6,14 +6,13 @@ import "./styles.css";
 
 const renderNameTag = (name) => <NameTag name={name.person} key={name.id} />;
 
-const App = (props) => {
+const App = () => {
   const NameTagElements = names.map(renderNameTag);
 
   return (
   <div className="App">
     <h1>Name Tag Generator</h1>
     {NameTagElements}
-
   </div>
   );
 };
